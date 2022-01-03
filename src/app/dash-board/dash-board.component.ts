@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserDetails } from '../service/user-details';
+import { EmployeeService } from '../service/employee.service';
 
 @Component({
   selector: 'app-dash-board',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashBoardComponent implements OnInit {
 
-  constructor() { }
+  user:any;
+  empDetailList:UserDetails[]=[];
 
-  ngOnInit(): void {
-  }
+ constructor(private employee: EmployeeService ){}
+ ngOnInit(){
+   this.employee.getUser().subscribe( data => { 
+     this.user=data;
+     this.empDetailList=this.user.employeePayrollDataList;
+       console.log(this.empDetailList);
 
+        });
+
+}
 }
