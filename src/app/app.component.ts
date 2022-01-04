@@ -3,6 +3,8 @@ import { EmployeeService } from './service/employee.service';
 import { UserDetails } from './service/user-details';
 
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +15,7 @@ export class AppComponent {
    user:any;
    empDetailList:UserDetails[]=[];
 
-  constructor(private employee: EmployeeService ){}
+  constructor( private employee: EmployeeService ){}
   ngOnInit(){
     this.employee.getUser().subscribe( data => { 
       this.user=data;
@@ -21,7 +23,8 @@ export class AppComponent {
         console.log(this.empDetailList);
 
          });
-         
   }
+
+
 
 }

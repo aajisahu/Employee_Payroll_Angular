@@ -2,20 +2,28 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
-import { DashBoardComponent } from './dash-board/dash-board.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserDetails } from './service/user-details';
+import { AddEmployeeComponent } from './add-employee/add-employee/add-employee.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
 
+import {AppRoutingModule} from './app-routing.module'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DashBoardComponent,
+    AddEmployeeComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
