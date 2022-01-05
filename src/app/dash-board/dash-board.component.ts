@@ -25,7 +25,11 @@ export class DashBoardComponent implements OnInit {
 
   }
 
-  get f(){
+    get f(){
     return this.registerForm.controls;
   }
+
+
+
+
 }

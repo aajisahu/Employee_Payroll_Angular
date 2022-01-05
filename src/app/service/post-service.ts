@@ -1,12 +1,13 @@
-export class PostService {
+export interface PostService {
     
-    name: String |undefined;
-    gender: String |undefined;
-    department=[];
-    salary: number |undefined;
-    startDate:Date |undefined;
-    note: String|undefined;
-    profilePic:String|undefined;
+    employeeId:number;
+    name: String ;
+    gender: String;
+    department:[];
+    salary: number ;
+    startDate:Date ;
+    note: String;
+    profilePic:String;
 }
 
 
