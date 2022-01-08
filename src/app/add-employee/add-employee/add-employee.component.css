@@ -47,8 +47,22 @@ label {
     font-family: Roboto;
     margin-right: 15px;
 }
+.name {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 
 .input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -147,3 +161,8 @@ a.button:hover {
 .department {
     margin-left: 30px;
 }
+/* #day{
+    padding: 1em 6em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+} */
