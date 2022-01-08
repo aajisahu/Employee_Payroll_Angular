@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { EmployeeService } from './service/employee.service';
 import { UserDetails } from './service/user-details';
-import { PostService } from './service/post-service';
+
 
 @Component({
   selector: 'app-root',
@@ -14,13 +13,9 @@ export class AppComponent {
    empDetailList:UserDetails[]=[];
    
 
-  constructor( private employee: EmployeeService ){}
+  constructor(){}
   ngOnInit(){
-    this.employee.getUser().subscribe( data => { 
-      this.user=data;
-      this.empDetailList=this.user.employeePayrollDataList;
-        console.log(this.empDetailList);});
-
+   
   }
 
 

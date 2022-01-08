@@ -2,7 +2,7 @@ export interface UserDetails {
 
     // message:String;
     // data:any ;
-    // employeeId: number;
+    employeeId: number;
     name:String;
     gender: String;
     departments: String;
