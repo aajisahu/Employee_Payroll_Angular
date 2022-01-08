@@ -16,8 +16,10 @@ postData:PostService[]=[]
 
       url="http://localhost:8080/employeePayrollservice/create";
 
-      createEmp(addNewEmp: any){
-        return this.httpClient.post(this.url, JSON.stringify(addNewEmp) )
-      }
+      
+      createContact(reourceBody: { name: string; gender: string; department: string[]; salary: string; startDate: string; note: string; profilePic: string; })
+        {
+        return this.httpClient.post(this.url,reourceBody)
+        }
       
 }

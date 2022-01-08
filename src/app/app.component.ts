@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'Employee_Pay_Roll';
    user:any;
    empDetailList:UserDetails[]=[];
-   addEmp:PostService[]=[];
+   
 
   constructor( private employee: EmployeeService ){}
   ngOnInit(){
@@ -21,10 +21,6 @@ export class AppComponent {
       this.empDetailList=this.user.employeePayrollDataList;
         console.log(this.empDetailList);});
 
-        this.employee.createEmp(this.addEmp).subscribe(data =>{
-          console.log(data)
-        })
-        
   }
 
 
