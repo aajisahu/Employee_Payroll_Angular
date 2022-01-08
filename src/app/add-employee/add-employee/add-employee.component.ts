@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { EmployeeService } from 'src/app/service/employee.service';
-import { PostService } from 'src/app/service/post-service';
-import { EmpDetails } from 'src/app/emp-details';
 import { FormControl, FormGroup, FormBuilder, NgForm } from '@angular/forms';
 
 @Component({
