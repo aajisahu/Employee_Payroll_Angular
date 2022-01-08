@@ -9,6 +9,8 @@ const routes :Routes=[
     {path: '', redirectTo:'dashboard', pathMatch:'full'},
     {path:'empForm', component:AddEmployeeComponent},
     {path:'empheader', component:HeaderComponent},
+    {path:'empForm/:employeeId', component:AddEmployeeComponent}, 
+    //  {path:'empForm/:employeeId', component:HeaderComponent},
     {path:'dashboard', component:DashBoardComponent}
 ];
 @NgModule({

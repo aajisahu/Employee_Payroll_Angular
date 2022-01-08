@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { EmployeeService } from 'src/app/service/employee.service';
-import { PostService } from 'src/app/service/post-service';
-import { EmpDetails } from 'src/app/emp-details';
 import { FormControl, FormGroup, FormBuilder, NgForm } from '@angular/forms';
 
 @Component({
@@ -11,7 +9,7 @@ import { FormControl, FormGroup, FormBuilder, NgForm } from '@angular/forms';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  Day=["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
+  Day=["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20", "21","22","23","24","25","26","27","28","29","30","31"];
   Month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   Year=["2016","2017","2018","2019","2020","2021","2022"];
   Dept=["HR","Finance","Engineer","Salse","Other"];
@@ -69,7 +67,6 @@ export class AddEmployeeComponent implements OnInit {
     console.log(JSON.stringify(data))
     );
   }
-
 
 }
 /**

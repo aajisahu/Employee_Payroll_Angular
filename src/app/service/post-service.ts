@@ -1,6 +1,6 @@
 export interface PostService {
     
-    employeeId:number;
+    employeeId:any;
     name: String ;
     gender: String;
     department:[];
